@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="video.html">Video Analysis</a></li>
+            <li><a href="speech.html">Speech Analysis</a></li>
+            <li><a href="text.html">Text Analysis</a></li>
+            <li><a href="resources.html">Resource Guide</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="livetest">
+                
+
+                         <h1>Ace the Interview: Prove Your Skills in a Real-Time Assessment</h1>
+                     
+                         <form action="\face" method="post">
+                         <button class="btn mt-2">Test</button></div>
+                        </form>
+                
+
+            </div>
+        <div class="recordtest">
+            
+
+                <h1>Showcase Your Talents: Submit Your Video and Get Instant Feedback</h1>
+                <form action="/upload" method="post" enctype="multipart/form-data">
+                    <div style="display: flex; align-items: center;">
+                      <input type="file" name="myFile" style="flex-grow: 1;">
+                      <input type="submit" value="Upload">
+                    </div>
+                  </form>
+                <form action="\emotions" method="post">
+                    <button class="btn mt-2">Submit</button></div>
+                </form>
+            
+        </div>
+        <section class="testimonial">
+
+            <div class="testimonial-item" data-aos="flip-left">
+                <div class="testimonial-item-text">
+                    <h4>{{ Card_1 }}</h4>
+                </div>
+                <div class="testimonial-item-reviewer">
+                    
+                        <h4> Angry </h4>
+                    </div>
+                
+            </div>
+
+
+            <div class="testimonial-item" data-aos="flip-left">
+                <div class="testimonial-item-text">
+                    <h4>{{ Card_2 }}</h4>
+                </div>
+                <div class="testimonial-item-reviewer">
+                    
+                        <h4> Sad </h4>
+                    </div>
+                
+            </div>
+
+            <div class="testimonial-item" data-aos="flip-left">
+                <div class="testimonial-item-text">
+                    <h4>{{ Card_3 }}</h4>
+                </div>
+                <div class="testimonial-item-reviewer">
+                    
+                        <h4> Neutral </h4>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial">
+
+            <div class="testimonial-item" data-aos="flip-left">
+                <div class="testimonial-item-text">
+                    <h4>{{ Card_4 }}</h4>
+                </div>
+                <div class="testimonial-item-reviewer">
+                   
+                        <h4> Disgust </h4>
+                        
+                    
+                </div>
+            </div>
+
+
+            <div class="testimonial-item" data-aos="flip-left">
+                <div class="testimonial-item-text">
+                    <h4>{{ Card_5 }}</h4>
+                </div>
+                <div class="testimonial-item-reviewer">
+                   
+                        <h4> Surprise </h4>
+                       
+                    
+                </div>
+            </div>
+
+            <div class="testimonial-item" data-aos="flip-left">
+                <div class="testimonial-item-text">
+                    <h4>{{ Card_6 }}</h4>
+                </div>
+                <div class="testimonial-item-reviewer">
+                    
+                        <h4> Fear </h4>
+                       
+                    </div>
+                
+            </div>
+        </section>
+
+        <section class="testimonial">
+
+            <div class="testimonial-item" data-aos="flip-left">
+                <div class="testimonial-item-text">
+                    <h4>{{ Card_7 }}</h4>
+                </div>
+                <div class="testimonial-item-reviewer">
+                    
+                        <h4> Happy </h4>
+                        
+                    </div>
+                
+            </div>
+
+
+            
+
+            
+        </section>
+
+        <section class="cta" data-aos="fade-up">
+
+            <div class="cta-item">
+                <div class="cta-text">
+                    <h2>Get early access today </h2>
+                    <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
+                </div>
+                <form class="cta-form mt-2" action="">
+                    <input class="input-block" type="text" placeholder="example@email.com"> <button class="btn-block">Get Started For Free</button> </form>
+            </div>
+        </section>
+    </main>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js">
+        navigator.mediaDevices.getUserMedia({ video: true })
+  .then(function(stream) {
+    document.getElementById('video').srcObject = stream;
+  });
+    </script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
